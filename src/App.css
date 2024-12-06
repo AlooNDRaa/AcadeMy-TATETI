@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: black;
+  flex-direction: column;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  color: black;
+}
+
+.btn {
+  color: black;
+  border-color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: black;
+  color: white;
+  border-bottom: solid 1px white;
+}
+
+.dark-mode footer {
+  background-color: black;
+  color: white;
+  border-top: solid 1px white;
+}
+
+
+.dark-mode .card {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .btn {
+  color: white;
+  border-color: white;
+}
+
+.dark-mode input {
+  background-color: #555;
+  color: white;
+  border: 1px solid #777;
+}
+
+.dark-mode input::placeholder {
+  color: #ccc;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode .task-list li {
+  background-color: #444; 
+  color: white; 
+}
+
+.dark-mode .home-link {
+  color: #fbfdff;
+  border: 2px solid #ffffff;
+}
+
+.dark-mode .home-link:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode .textHeader {
+  color: white;
+}
+
+header {
+  background: #ffffff;
+  color: #000000;
+  border-bottom: #10121449 1px solid;
+  height: 7rem;
+  width: 84.9rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  color: #000000;
+  padding-top: 50px;
+}
+
+footer {
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.541);
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.task-form input {
+  width: 280px; 
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 10px;
+  background: #000000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 7px;
+}
+
+.task-list {
+  margin: 20px;
+  width: 320px;
+  justify-content: center;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  background: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.task-list button {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+}
+
+.section-juego {
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px; 
+  width: 320px; 
+  margin: 50px auto;
+}
+
+.game-cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(146, 146, 146);
+  cursor: pointer;
+  font-size: 60px;
+  box-shadow: 2px 2px 2px #a9a9a9;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-cell:hover {
+  background-color: #f0f0f0;
+}
+
+
+.menu {
+  background: #b5b8c6;
+  color: #fff;
+  padding: 30px;
+  min-height: 70px;
+  border-bottom: #fdfdfd 300px solid;
+  margin-top: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
+
+.containerHome {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.links-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+
+.div-nameGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.div-nameGame h3 {
+  font-size: 3rem;
+}
+
+.divinputname input {
+  display: flex;
+  flex-direction: column;
+  margin-block: 2rem;
+}
+
+.input-namei {
+  background-color: transparent;
+  border: solid 1px white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.divinputname button {
+  display: flex;
+  width: 13rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ .textHeader {
+  color: rgb(0, 0, 0);
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  height: 4rem;
+}
+
+.link-home {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.Game-statusName {
+  padding: 1rem;
+  position: fixed;
+}
